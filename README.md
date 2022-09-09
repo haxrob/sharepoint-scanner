@@ -1,14 +1,17 @@
-# sharepoint-scanner
-Multithreaded Microsoft SharePoint version / vulnerability scanner
+# Microsoft SharePoint Build / Vulnerability scanner
+
+A Multithreaded Microsoft SharePoint version / vulnerability scanner
 
 ## Installation
 ### Binaries
 Compiled 64-bit executable files for Windows, Mac and Linux are available [here](https://github.com/robhax/sharepoint-scanner/releases/)
 
-### Go get
+### Building
 If you would prefer to build yourself (and Go is setup [correctly](https://golang.org/doc/install)):
 ```
-go get -u github.com/robhax/sharepoint-scanner
+git clone https://github.com/robhax/sharepoint-scanner
+cd sharepoint-scanner
+go build .
 ```
 
 # Usage 
