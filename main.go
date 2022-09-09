@@ -35,6 +35,8 @@ func main() {
 		fmt.Fprintf(os.Stderr, "Sharepoint Scanner v0.01 - https://github.com/robhax/sharepoint-scanner\n\n")
 		fmt.Fprintf(os.Stderr, "Usage: %s [options]\n\n", os.Args[0])
 		flag.PrintDefaults()
+		fmt.Fprintf(os.Stderr, "\nHosts can be IP addresses or URIs.\n")
+		fmt.Fprint(os.Stderr, "Both port 80 and 443 (https) will be scanned.\n\n")
 	}
 
 	if len(os.Args) < 2 {

@@ -44,10 +44,12 @@ func (s *SharePointScanner) CheckHost(url string) {
 
 	header := s.FetchHeader(url)
 	if header != "" {
+
 		if s.Verbose == true {
 			fmt.Println("Got build number: " + header)
 		}
 		p := strings.Split(header, ".")
+
 		if len(p) == 4 {
 			fixedVersion := fmt.Sprintf("%s.0.%s", p[0], p[3])
 			if s.Verbose == true {
@@ -59,9 +61,10 @@ func (s *SharePointScanner) CheckHost(url string) {
 				b := s.Builds[fixedVersion]
 				fmt.Println("\tBuild number: " + fixedVersion)
 				b.Print()
+				return
 			}
 		}
-
+		fmt.Printf("[\033[92m-\033[0m] %s is returns known version %s. Contact author.\n", url, header)
 	}
 
 }
