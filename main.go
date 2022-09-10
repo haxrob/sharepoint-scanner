@@ -1,3 +1,10 @@
+/*
+Microsoft SharePoint build/version scanner
+Author: Twitter @haxrob
+
+https://github.com/robhax/sharepoint-scanner
+*/
+
 package main
 
 import (
