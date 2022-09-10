@@ -32,7 +32,7 @@ Usage: sharepoint-scanner [options]
   -w int
         Number of concurrent workers (default 20)
 
-Hosts can be IP addresses or URIs.
+Hosts can be either IP addresses or domain names or URIs.
 Both port 80 and 443 (https) will be scanned.
 ```
 ## Example
@@ -49,6 +49,9 @@ Both port 80 and 443 (https) will be scanned.
 
 [+] Done!
 ```
-
-`-h` Host 
-`-f` can contain any combination of IP addresses or URIs (e.g. https://server)
+Hosts in the host file (`-f`) or single host (`-h`) can be IP addresses, domains or URIs, e.g.
+```
+192.168.0.1
+https://example.server.com/
+http://10.10.0.1:8443
+```
