@@ -2,6 +2,9 @@
 
 A Multithreaded Microsoft SharePoint version / vulnerability scanner
 
+### Note
+The Sharepoint version db is not yet complete. The tool will detect Sharepoint but not report the release date for all releases yet. If there is enough interest I will prioritise completing the database for ~300 versions.
+
 ## Installation
 ### Binaries
 Compiled 64-bit executable files for Windows, Mac and Linux are available [here](https://github.com/robhax/sharepoint-scanner/releases/)
